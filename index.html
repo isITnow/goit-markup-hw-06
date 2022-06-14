@@ -430,22 +430,42 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-button" type="button" data-modal-close>
-          <svg width="18" height="18">
+          <svg class="modal-button-icon" width="18" height="18">
             <use href="./images/symbol-defs.svg#icon-close-black"></use>
           </svg>
         </button>
         <div class="feedback">
           <b class="feedback-title">Оставьте свои данные, мы вам перезвоним</b>
           <form class="feedback-form">
-            <label for="" class="feedback-label">Имя</label>
-            <input type="name" class="feedback-input" />
-            <label for="" class="feedback-label">Телефон</label>
-            <input type="text" class="feedback-input" />
-            <label for="" class="feedback-label">Почта</label>
-            <input type="email" name="email" class="feedback-input" />
-            <label for="" class="feedback-label">
-              <texstarea></texstarea>
-            </label>
+            <div class="form-field">
+              <label for="user-name" class="feedback-label" autofocus>Имя</label>
+              <input type="text" name="name" id="user-name" class="feedback-input" />
+            </div>
+            <div class="form-field">
+              <label for="user-tel" class="feedback-label">Телефон</label>
+              <input type="tel" name="tel" id="user-tel" class="feedback-input" />
+            </div>
+            <div class="form-field">
+              <label for="user-email" class="feedback-label">Почта</label>
+              <input type="email" name="mail" id="user-email" class="feedback-input" />
+            </div>
+            <div class="comment-field">
+              <label for="comment" class="feedback-label">Комментарий</label>
+              <textarea
+                name="comment"
+                id="comment"
+                placeholder="Введите текст"
+                class="feedback-text"
+              ></textarea>
+            </div>
+            <div class="policy-field">
+              <input type="checkbox" id="policy" />
+              <label for="policy" class="policy-label"
+                >Соглашаюсь с рассылкой и принимаю <a href=""> Условия договора</a></label
+              >
+            </div>
+
+            <button type="submit" class="feedback-submit">Отправить</button>
           </form>
         </div>
       </div>
