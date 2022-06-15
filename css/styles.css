@@ -932,8 +932,8 @@ textarea {
   overflow: hidden;
 }
 
-.project-item:hover .overlay,
-.project-item:focus .overlay {
+.project-link:hover .overlay,
+.project-link:focus .overlay {
   transform: translateY(0);
 }
 
