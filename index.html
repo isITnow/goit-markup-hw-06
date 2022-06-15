@@ -437,43 +437,45 @@
         <div class="feedback">
           <b class="feedback-title">Оставьте свои данные, мы вам перезвоним</b>
           <form class="feedback-form">
-            <div class="form-field">
-              <label for="user-name" class="feedback-label" autofocus>Имя</label>
-              <input type="text" name="name" id="user-name" class="feedback-input" />
+            <label class="form-field">
+              <span class="feedback-label">Имя</span>
+              <input type="name" name="user-name" class="feedback-input" autofocus />
               <svg class="form-field-icon" width="18" height="18">
                 <use href="./images/symbol-defs.svg#icon-person"></use>
               </svg>
-            </div>
-            <div class="form-field">
-              <label for="user-tel" class="feedback-label">Телефон</label>
-              <input type="tel" name="tel" id="user-tel" class="feedback-input" />
+            </label>
+            <label class="form-field">
+              <span class="feedback-label">Телефон</span>
+              <input type="tel" name="user-tel" class="feedback-input" />
               <svg class="form-field-icon" width="18" height="18">
                 <use href="./images/symbol-defs.svg#icon-phone-black"></use>
               </svg>
-            </div>
-            <div class="form-field">
-              <label for="user-email" class="feedback-label">Почта</label>
-              <input type="email" name="mail" id="user-email" class="feedback-input" />
+            </label>
+            <label class="form-field">
+              <span class="feedback-label">Почта</span>
+              <input type="email" name="user-mail" class="feedback-input" />
               <svg class="form-field-icon" width="18" height="18">
                 <use href="./images/symbol-defs.svg#icon-email-black"></use>
               </svg>
-            </div>
-            <div class="comment-field">
-              <label for="comment" class="feedback-label">Комментарий</label>
+            </label>
+            <label class="comment-field">
+              <span class="feedback-label">Комментарий</span>
               <textarea
-                name="comment"
-                id="comment"
+                type="text"
+                name="user-comment"
                 placeholder="Введите текст"
                 class="feedback-text"
               ></textarea>
-            </div>
-            <div class="policy-field">
-              <input type="checkbox" id="policy" />
-              <label for="policy" class="policy-label"
-                >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label
+            </label>
+            <label class="policy-field">
+              <input class="checkbox" type="checkbox" />
+              <svg class="check-icon" width="16" height="15">
+                <use href="./images/symbol-defs.svg#icon-check"></use>
+              </svg>
+              <span class="policy-label"
+                >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></span
               >
-            </div>
-
+            </label>
             <button type="submit" class="feedback-submit">Отправить</button>
           </form>
         </div>
