@@ -759,7 +759,6 @@ textarea {
   display: flex;
   margin: auto;
   margin-bottom: 30px;
-  overflow: hidden;
 }
 
 .policy-label {
@@ -791,7 +790,6 @@ textarea {
 .icon-wrap {
   position: relative;
   display: inline-flex;
-  margin-left: 3px;
   margin-right: 8px;
   width: 14px;
   height: 13px;
