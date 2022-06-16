@@ -661,6 +661,8 @@ ul {
 .feedback {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .feedback-form {
@@ -785,24 +787,32 @@ textarea {
   overflow: hidden;
 }
 
-.policy-field::before {
-  content: '';
-  display: inline-block;
+
+.icon-wrap {
+  position: relative;
+  display: inline-flex;
+  margin-left: 3px;
   margin-right: 8px;
   width: 14px;
   height: 13px;
-  border: 2px solid black;
+  border: 2px solid #000000;
   border-radius: 2px;
+}
+
+.checkbox:checked+.icon-wrap {
+  border-color: transparent;
 }
 
 .check-icon {
   position: absolute;
-  left: -1px;
-  display: none;
+  top: -3px;
+  left: -2px;
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox:checked+.check-icon {
-  display: unset;
+.checkbox:checked+.icon-wrap>.check-icon {
+  opacity: 1;
 }
 
 .feedback-submit {
