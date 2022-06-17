@@ -491,7 +491,6 @@ ul {
 
 .social-title,
 .signup-title {
-  display: block;
   margin-bottom: 20px;
   font-size: 14px;
   font-weight: 700;
@@ -532,7 +531,7 @@ ul {
 
 .signup {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   margin-right: auto;
 }
 
