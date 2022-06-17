@@ -311,15 +311,12 @@
           </ul>
         </div>
         <div class="signup">
-          <form class="sinup-form">
-            <label for="user_email" class="signup-label">Подпишитесь на рассылку</label>
-            <input
-              type="email"
-              name="email"
-              id="user_email"
-              placeholder="E-mail"
-              class="signup-input"
-            />
+          <b class="signup-title">Подпишитесь на рассылку</b>
+          <form class="signup-form">
+            <label class="input-label">
+              <span class="signup-label hidden">Ваш e-mail</span>
+              <input type="email" name="email" placeholder="E-mail" class="signup-input" required />
+            </label>
             <button type="submit" class="signup-button">
               Подписаться
               <svg width="24" height="24" class="signup-icon">

@@ -490,7 +490,8 @@ ul {
 }
 
 .social-title,
-.signup-label {
+.signup-title {
+  display: block;
   margin-bottom: 20px;
   font-size: 14px;
   font-weight: 700;
@@ -531,15 +532,8 @@ ul {
 
 .signup {
   display: flex;
+  flex-direction: column;
   margin-right: auto;
-}
-
-.signup-form {
-  display: flex;
-}
-
-.signup-label {
-  display: block;
 }
 
 .signup-input {
