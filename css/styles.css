@@ -747,7 +747,6 @@ textarea {
 }
 
 .policy-field {
-  position: relative;
   align-items: center;
   display: flex;
   margin: auto;
